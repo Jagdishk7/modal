@@ -8,10 +8,10 @@ export default function Modal() {
     setModal(!modal);
   };
 
-  if(modal) {
-    document.body.classList.add('active-modal')
+  if (modal) {
+    document.body.classList.add("active-modal");
   } else {
-    document.body.classList.remove('active-modal')
+    document.body.classList.remove("active-modal");
   }
 
   return (
@@ -24,17 +24,14 @@ export default function Modal() {
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <h2>Hello Modal</h2>
-            <p>
-              Hello Parsh Technologies
-            </p>
+            <h2>Hello Parsh Technologies</h2>
+            <p>This is a Modal Component Built in React </p>
             <button className="close-modal" onClick={toggleModal}>
               CLOSE
             </button>
           </div>
         </div>
       )}
-    
     </>
   );
 }
